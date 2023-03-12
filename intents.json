@@ -1,0 +1,50 @@
+{"intents":  [
+  {"tag": "0",
+   "patterns": ["god"],
+   "responses": ["Could you repeat ","pleASSE input again ","i could not understand you"]
+  },
+  {"tag": "greetings",
+   "patterns":  ["hello","hi","hey","greatings","how is it going"],
+   "responses":  ["helllo there","HEY!","wHAT CAN I DO FOR YOU ?"]
+  },
+  {"tag": "age",
+   "patterns":  ["how old are you ","what is your age","age?"],
+   "responses":  ["I am 1 week old ","I was created a week ago"]
+  },
+  {"tag": "name",
+   "patterns": ["who are you","your name","what is your name","can you tell me your name","what should i call you"],
+   "responses": ["My name is Benio","You may call me Benio","I am benio"]
+  },
+  {"tag": "popular",
+   "patterns": ["most popular engineering disciplines in India?"," enginering disciples","popular enginering in india"],
+   "responses": ["please dont ask me this"]
+  },
+  {"tag": "goodbye",
+   "patterns": ["bye", "goodbye", "see you later"],
+   "responses": ["Goodbye! Have a great day.", "Take care and have a nice day.", "See you later!"]
+  },
+  {"tag": "thanks",
+   "patterns": ["thank you", "thanks", "appreciate it"],
+   "responses": ["You're welcome!", "Anytime!", "Glad to help!"]
+  },
+  {"tag": "weather",
+   "patterns": ["What's the weather like today?", "How's the weather?", "Is it going to rain today?"],
+   "responses": ["SORRY I DONT HAVE ANY SENSORS OR A CONNECTION TO INTERNET.",  "As the climate in mumbai is humid i assume it must be sunny outside."]
+   },
+  {"tag": "food",
+   "patterns": ["your favorite food?", "Do you like pizza?", "Have you ever tried sushi?"],
+   "responses": ["I don't eat since I'm a virtual assistant, but my programmers love pizza!", "I haven't tried sushi before, but I heard it's delicious!", "My favorite food is code, but I heard good things about burgers!"]
+  },
+  {"tag": "technology",
+   "patterns": [" your favorite gadget?", " the latest technology?"],
+   "responses": ["As an AI, I don't have favorites, but my programmers love their smartphones!", "The latest technology is AI, blockchain, and IoT."]
+  },
+  {"tag": "top college",
+   "patterns":  ["Top 5 engineering colleges in mumbai","engineering colleges in mumbai", "colleges in mumbai","best Engineering colleges in mumbai","best engineering college near me"],
+   "responses":  ["Here are are Top 10 Engineering colleges in Mumbai \n1.Indian Institute of Technology, Bombay \n2.Institute of Chemical Technology, Mumbai \n3.Veermata Jijabai Technological Institute, Mumbai.\n4.K.J. Somaiya College of Engineering, Mumbai\n5.Ramrao Adik Institute of Technology, Mumbai"]
+  }
+
+
+
+ ]
+}
