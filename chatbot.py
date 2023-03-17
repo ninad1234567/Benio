@@ -42,7 +42,7 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]),verbose = 0)[0]
-    ERROR_THRESHOLD = 0.85
+    ERROR_THRESHOLD = 0.90
 
 
 
@@ -52,7 +52,7 @@ def predict_class(sentence):
 
    #results =[[i,r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results = [[i, r] if r > ERROR_THRESHOLD else [i, 0] for i, r in enumerate(res)]
-    print(results)
+    #print(results)
 
     if results ==[0,0]:
         return 0
@@ -65,7 +65,7 @@ def predict_class(sentence):
         return_list =[]
         for r in results:
             return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
-            print(return_list)
+            #print(return_list)
         return return_list
 
 def get_response(intents_list, intents_json):
