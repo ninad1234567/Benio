@@ -1,16 +1,30 @@
-# This is a sample Python script.
+from flask import Flask, jsonify
+import jinja2
+from flask import render_template,request
+from chatbot import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+app = Flask(__name__)
+
+import json
+
+# try again
+@app.route('/', methods=['GET', 'POST'])
+def process_input():
+
+    if request.method == 'POST':
+
+        input_text = request.form.get('input_text')
+
+        processed_output = process_text(input_text)
+
+        #return json.dumps(processed_output)
+        return render_template('main.html',processed_output = processed_output, input_text = input_text)
+
+    return render_template('main.html')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

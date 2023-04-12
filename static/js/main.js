@@ -49,7 +49,11 @@ function myFunction(x){
         scroll = offset;
         layer3.style.top = (41 + scroll/10) + '%';
     });
-    }
+    };
+
+
+
+
 }
 if (matchMedia) {
     const x = window.matchMedia("(max-width: 1050px)");

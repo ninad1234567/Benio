@@ -18,6 +18,26 @@ classes = pickle.load(open('classes.pkl', 'rb'))
 
 model = load_model('Benio.h5')
 
+
+
+#tial here
+from flask import Flask,render_template,request
+#from flask_ngrok import run_with_ngrok
+#import jinja2
+
+
+
+
+def get_response(intents_list, intents_json):
+    tag = intents_list[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if i['tag'] == tag:
+            result = random.choice(i['responses'])
+            break
+    return result
+
+
 #to clean the sentence
 
 def clean_up_sentence(sentence):
@@ -68,6 +88,8 @@ def predict_class(sentence):
             #print(return_list)
         return return_list
 
+
+
 def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
@@ -75,13 +97,25 @@ def get_response(intents_list, intents_json):
         if i['tag'] == tag:
             result = random.choice(i['responses'])
             break
-    return result
-
-print("Benio is running!!!!!")
+    return str(result)
 
 
-while True:
-    message = input(">>>")
-    ints = predict_class(message)
-    res = get_response(ints,intents)
-    print(res)
+#print("Benio is running!!!!!")
+
+
+#from main import request
+'''
+#while True:
+message = input(">>>")
+ints = predict_class(message)
+request = get_response(ints,intents)
+print(request)
+'''
+
+def process_text(input_text):
+    ints = predict_class(input_text)
+    request = get_response(ints, intents)
+
+    return request
+
+

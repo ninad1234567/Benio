@@ -38,10 +38,6 @@
   {"tag": "technology",
    "patterns": [" your favorite gadget?", " the latest technology?"],
    "responses": ["As an AI, I don't have favorites, but my programmers love their smartphones!", "The latest technology is AI, blockchain, and IoT."]
-  },
-  {"tag": "top college",
-   "patterns":  ["Top 5 engineering colleges in mumbai","engineering colleges in mumbai", "colleges in mumbai","best Engineering colleges in mumbai","best engineering college near me"],
-   "responses":  ["Here are are Top 10 Engineering colleges in Mumbai \n1.Indian Institute of Technology, Bombay \n2.Institute of Chemical Technology, Mumbai \n3.Veermata Jijabai Technological Institute, Mumbai.\n4.K.J. Somaiya College of Engineering, Mumbai\n5.Ramrao Adik Institute of Technology, Mumbai"]
   }
 
 
