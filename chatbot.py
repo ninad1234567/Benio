@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 import nltk
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer     #work workking works
 
 import tensorflow
 import keras
@@ -105,13 +105,13 @@ def get_response(intents_list, intents_json):
 
 #from main import request
 '''
-#while True:
-message = input(">>>")
-ints = predict_class(message)
-request = get_response(ints,intents)
-print(request)
-'''
+while True:
+    message = input(">>>")
+    ints = predict_class(message)
+    request = get_response(ints,intents)
+    print(request)
 
+'''
 def process_text(input_text):
     ints = predict_class(input_text)
     request = get_response(ints, intents)

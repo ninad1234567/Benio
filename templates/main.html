@@ -7,6 +7,31 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Baloo+Chettan+2|Tangerine&display=swap" rel="stylesheet">
     <link rel="icon" href="static/images/roboimagecircle.jpg">
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+            integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+            crossorigin="anonymous"
+    ></script>
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
     <header>
@@ -87,10 +112,38 @@
 
 
             <form id="input_form" method="post">
-            <textarea name="input_text"  id="" cols="50" rows="20" > {{ input_text }} {{"\n"}}    {{ processed_output }}
+            <textarea name="input_text"  id="input_text" cols="50" rows="20" > {{ input_text }} {{"\n"}}    {{ processed_output }}
             </textarea>
 
+
+
+
+
+                <!--
+
+
+
+                <button type="button" name="send" id="send-btn" onclick="sendMessage()">Send</button>
+
+
+                <script type="text/javascript">
+                    var socketio = io();
+
+
+
+
+                    const sendMessage = () => {
+                        const messages = document.getElementById("input_text")
+                        socketio.emit("message",{data: message.value});
+
+                    };
+                </script>
+
+                -->
+
+
                  <input  type="submit" value="Process">
+                <input type="reset" value="reset" />
 
 
 

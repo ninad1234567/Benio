@@ -6,12 +6,14 @@ import array
 import nltk
 from nltk.stem import WordNetLemmatizer
 
+
 import tensorflow
+
 
 from tensorflow import keras
 from keras.models import Sequential
 from keras.layers import Dense,Activation,Dropout
-from keras.optimizers import SGD
+from keras.optimizers import SGD  #stochastic gradient descent
 
 lemmatizer = WordNetLemmatizer()
 
@@ -21,13 +23,13 @@ words = []
 classes = []
 documents = []
 
-ignore_letters =['?','!','.',',']
+ignore_letters =['?','!','.',',','/',';',':','[',']','{','}','|','&']
 
 for intent in intents['intents']:
     for pattern in intent['patterns'] :
-        word_list = nltk.word_tokenize(pattern)
+        word_list = nltk.word_tokenize(pattern)   #splits into words (splitting up a larger body of text into smaller lines, words or even creating words)
         words.extend(word_list)
-        documents.append((word_list,intent['tag']))
+        documents.append((word_list,intent['tag']))  #append as tupel
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 #print(words)

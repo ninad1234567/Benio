@@ -4,7 +4,7 @@
    "responses": ["Could you repeat ","pleASSE input again ","i could not understand you"]
   },
   {"tag": "greetings",
-   "patterns":  ["hello","hi","hey","greatings","how is it going"],
+   "patterns":  ["hello","hi","hey","hii","hiii","greatings","how is it going"],
    "responses":  ["helllo there","HEY!","wHAT CAN I DO FOR YOU ?"]
   },
   {"tag": "age",
@@ -28,7 +28,7 @@
    "responses": ["You're welcome!", "Anytime!", "Glad to help!"]
   },
   {"tag": "weather",
-   "patterns": ["What's the weather like today?", "How's the weather?", "Is it going to rain today?"],
+   "patterns": ["What's the weather ", "How's the weather?", "Is it going to rain today?"],
    "responses": ["SORRY I DONT HAVE ANY SENSORS OR A CONNECTION TO INTERNET.",  "As the climate in mumbai is humid i assume it must be sunny outside."]
    },
   {"tag": "food",
@@ -38,7 +38,200 @@
   {"tag": "technology",
    "patterns": [" your favorite gadget?", " the latest technology?"],
    "responses": ["As an AI, I don't have favorites, but my programmers love their smartphones!", "The latest technology is AI, blockchain, and IoT."]
+  },
+  {"tag": "engineering",
+   "patterns": ["What is engineering?", "Who is an engineer?","Define engineering","meaning of engineering"],
+   "responses": ["engineering is defined as the application of science and mathematics by which the properties of matter and the sources of energy in nature are made useful to people."]
+  },
+  {"tag": "engineer",
+   "patterns": ["What do engineers do?", "purpose of engineers?"],
+   "responses": ["Engineers take abstract ideas and apply science and mathematics to build products to meet the needs of mankind."]
+  },
+  {"tag": "students",
+   "patterns": ["Number of engineering students in India", "Number of engineering students","students pursuing engineering in India?"," engineering students in India"],
+   "responses": ["As per the results of a survey across India, around 1,081 thousand students were enrolled in computer science engineering discipline in academic year 2021. The second highly sought after engineering discipline was mechanical with about 595 thousand students for the same year."]
+  },
+
+  {"tag": "first",
+   "patterns": ["Who was the first engineer?","The first engineer","who is first engineer"],
+   "responses": ["Imhotep, the builder of the Step Pyramid in Egypt in 2250 B.C., was the first engineer."]
+  },
+
+  {"tag": "famous",
+   "patterns": ["Name famous people with engineering degree?","Famous engineers","Engineers who are famous","role model"],
+   "responses": ["Jeff Bezos, founder and chief executive officer of Amazon.com","Louis V. Gerstner Jr., chairman and chief executive officer of IBM","Roberto C. Goizueta, former chairman and chief executive officer of Coca-Cola","Charles O. (Chad) Holliday Jr., P.E., chairman and chief executive officer of DuPont","Jack E. Little, former president and chief executive officer of Shell Oil Company","Jack Welch Jr."]
+  },
+
+  {"tag": "csmajor",
+   "patterns": ["Courses required for the computer engineering major?", "courses in computer engineering", "computer engineering courses","list computer engineering courses"],
+   "responses":["The computer engineering major requires courses in computer science, electrical engineering, and mathematics, such as programming, circuits, digital logic, algorithms, and data structures","Computer Engineering is a discipline that combines principles of computer science and electrical engineering. Here are some courses that are typically offered in Computer Engineering:\nDigital Logic Design\nComputer Architecture\nProgramming and Data Structures\nComputer Networks\nOperating Systems\nEmbedded Systems\nDigital Signal Processing\nComputer Organization and Assembly Language Programming\nComputer Graphics and Visualization\nSoftware Engineering\nVLSI Design\nRobotics and Control Systems\nComputer Security and Cryptography\nMachine Learning and Artificial Intelligence"]
+  },
+
+  {"tag": "mechmajor",
+   "patterns": ["courses required for mechanical engineering major?","courses in mechanical engineering", "mechanical engineering courses","list mechanical engineering courses"],
+   "responses":["The mechanical engineering major requires courses in mathematics, physics, mechanics, materials, thermodynamics, design, and manufacturing, among others. ","Mechanical engineering is a discipline that focuses on the design, analysis, and development of mechanical systems. Here are some courses that are typically offered in mechanical engineering:\nMechanics of Materials\nThermodynamics\nFluid Mechanics\nHeat Transfer\nManufacturing Processes\nDynamics and Vibrations\nMechanical Design\nMaterialsScience and Engineering\nControl Systems\nRobotics and Mechatronics\nFinite Element Analysis\nEngineering Mechanics Machine Design\nRenewable Energy Systems\nAdvanced Manufacturing Techniques\nAutomotive Engineering\nAircraft Design and Aerodynamics\nEngineering Ethics and Professionalism"]
+  },
+
+  {"tag": "career",
+  "patterns": ["kind of jobs with an engineering degree?","engineering jobs","jobs after engineering","What are the jobs after engineering","jobs"],
+  "responses": ["With an engineering degree, you can pursue a variety of careers, including aerospace engineer, biomedical engineer, chemical engineer, civil engineer, computer engineer, electrical engineer, environmental engineer, mechanical engineer, and many more. The job prospects for engineering graduates are generally positive, with high demand in fields such as renewable energy, healthcare, and advanced manufacturing."]
+  },
+
+  {"tag": "admissions",
+   "patterns": ["What are the admission requirements for the engineering?","requirements for engineering", "admission requirements for engineering", "what to do to take admission in engineering'", "admission procedure"],
+   "responses": ["The admission requirements for the engineering program include a high school diploma or equivalent, standardized test scores, letters of recommendation, and a personal statement. Some engineering programs may also require additional coursework or experience in math, science, or engineering." ,"Passed HSC or its equivalent examination with Physics and Mathematics as compulsory subjects along with one of the Chemistry or Biotechnology or Biology or Technical or Vocational subjects, and obtained at least 45% marks (at least 40% marks, in case of Backward class categories and Persons with Disability candidates"]
+  },
+
+  {"tag": "internship",
+   "patterns": ["How can I find an internship in engineering?", "internship", "ways to get internship","can i find  an internship"],
+   "responses": ["There are many ways to find an internship in engineering, including checking with your university's career center, networking with alumni and professionals in the field, attending career fairs and conferences, and searching for opportunities on job boards and company websites. Some engineering programs also offer internship placement services or require students to complete internships as part of the curriculum. "]
+  },
+
+  {"tag": "abroad",
+   "patterns": ["Can I study engineering abroad?", "study engineering abroad", "Ways to study engineering abroad"],
+   "responses": ["Yes, many universities offer study abroad programs for engineering students, which allow them to take courses and gain international experience in a different country.",  "Some programs may also offer research or internship opportunities. However, it's important to carefully consider the logistics and cost of studying abroad, as well as the potential impact on your academic progress and career goals."]
+  },
+  {"tag": "pursue-after",
+   "patterns": ["what can i pursue after engineering","what should i do after engineering", "what can i do after engineering","Options After Engineering", "Career Options After Engineering"],
+   "responses": ["Higher Studies", "Public Service Undertakings",  "Management", "Entrepreneurship",  "Campus Placements", "Become an Expert", "Civil Services", "Look for internships", "Enter the private sector", "Get a certification", "Join the Indian Armed Forces"]
+  },
+  {"tag": "entrance",
+   "patterns": ["what are the entrance exams for engineering after 12th", "Entrance exams after 12th", "exams for engineerings"],
+   "responses":["JEE Main (Joint Entrance Examination Main) JEE Advanced (Joint Entrance Examination Advanced) MHT CET (Maharashtra Common Entrance Test)"]
+  },
+  {"tag": "exam after",
+   "patterns": ["Which Government exam is best after engineering?", "government exams after engineering", "Exams after engineering"],
+   "responses":["UPSC Civil Services exam, ISRO/BARC, GATE, NDA exam, and SSC JE are some of the best exams to give if you wish to get government jobs after engineering."]
+  },
+  {"tag": "itmajor",
+   "patterns": ["What courses are required for the IT engineering major?", "courses in IT engineering", "IT engineering courses", "list IT engineering courses"],
+   "responses": ["These courses provide a solid foundation in various aspects of IT Engineering, including programming, computer hardware and software, databases, networking, security, and emerging technologies such as AI, IoT, and VR.\n\nHere's a list of common courses in IT Engineering:\nIntroduction to Programming\nData Structures and Algorithms\nComputer Organization and Architecture\nDatabase Systems\nOperating Systems\nComputer Networks\nObject-Oriented Programming\nWeb Development\nSoftware Engineering\nMobile Application Development\nComputer Security and Cryptography\nArtificial Intelligence and Machine Learning\nComputer Graphics and Visualization\nDistributed Systems\nCloud Computing\nInternet of Things (IoT)\nHuman-Computer Interaction (HCI)\nBig Data Analytics\nVirtual and Augmented Reality\nComputer Ethics and Professionalism\n"]
+  },
+  {"tag": "elecmajor",
+   "patterns":  ["What courses are required for the electrical engineering major?", "courses in electrical engineering", "electrical engineering", "list electrical engineering courses"],
+   "responses": ["The specific courses required for an electrical engineering major can vary depending on the institution and program. However, typical courses for an electrical engineering major may include:\nCalculus (I-III)\nDifferential Equations\nLinear Algebra\nPhysics (I-II)\nIntroduction to Engineering\nCircuits\nElectronics\nDigital Logic\nSignals and Systems\nElectromagnetics\nPower and Energy Systems\nControl Systems\nComputer Architecture and Organization\nProgramming Languages (such as in C, C++, Java or Python)\nCommunication Systems","Signals and Systems\nCircuit Analysis\nElectromagnetics\nElectronics\nDigital Systems\nControl Systems\nPower Systems\nCommunication Systems\nEngineering Ethics and Professionalism\nRenewable Energy Systems"]
+   },
+   {"tag": "civilmajor",
+    "patterns":  ["What courses are required for the civil engineering major?", "courses in civil engineering", "civil engineering","list civil engineering courses"],
+    "responses": ["Civil engineering is a field that involves the design, construction, and maintenance of infrastructure such as buildings, roads, bridges, and water systems. Here are some common courses in Civil Engineering:\nStatics and Dynamics\nMechanics of Materials\nSurveying\nStructural Analysis\nGeotechnical Engineering\nTransportationEngineering\nWater Resources Engineering\nConstruction Management\nEnvironmental Engineering\nEngineering Ethics and Professionalism"]
+   },
+   {"tag": "aeromajor",
+    "patterns": ["What courses are required for the aeronautical engineering major?", "courses in aeronautical engineering", "aeronautical engineering","list aeronautical engineering courses"],
+    "responses": ["Aeronautical engineering involves the design, development, and testing of aircraft and spacecraft. Here are some common courses in Aeronautical Engineering:\nAerodynamics\nAerospace Materials\nAircraft Structures\n Flight Dynamics\nPropulsion Systems\nAvionics and Instrumentation\nSpacecraft Design\nAerothermodynamics\nAerospace Manufacturing\nAerospace Systems"]
+   },
+   {"tag": "difference",
+    "patterns": ["What is difference between bsc and engineering course", "difference between bsc and engineering course", "how is bsc course different from engineering"],
+    "responses":["BSc stands for Bachelor of Science, while Engineering courses are specialized programs that prepare students to become engineers.A BSc degree typically focuses on a broader range of scientific subjects, such as physics, chemistry, mathematics, and biology. The coursework may include both theoretical and practical components, but it generally doesn't involve hands-on training specific to any particular industry or profession.Engineering courses, on the other hand, are designed to provide students with specialized knowledge and skills required to become engineers in various fields such as electrical, mechanical, civil, chemical, computer, and aerospace engineering, among others. These programs often include laboratory work, project-based learning, and practical training in industry-standard tools and technologies."]
+   },
+   {"tag": "firstfengg",
+    "patterns": ["1st female engineer","Who was the 1st female engineer","First female engineer" ],
+    "responses":["The first female engineer on record is considered to be Elizabeth Bragg. She graduated from the University of California, Berkeley, with a degree in civil engineering in 1876."]
+   },
+   {"tag": "placement",
+    "patterns": ["which college has good placement in mumbai", "colleges with good placement", "good placement colleges in mumbai"],
+    "responses":["There are several colleges in Mumbai with good placement records. Some of the top colleges known for good placement opportunities in Mumbai are: \nIndian Institute of Technology (IIT) Bombay/nVeermata Jijabai Technological Institute (VJTI)\nSardar Patel Institute of Technology (SPIT)\nMukesh Patel School of Technology Management and Engineering (MPSTME)\nDwarkadas J. Sanghvi College of Engineering (DJSCOE)\nK. J. Somaiya College of Engineering (KJSCE)\nFr. Conceicao Rodrigues College of Engineering (CRCE)\nThadomal Shahani Engineering College (TSEC)"]
+   },
+   {"tag": "borivali",
+    "patterns": ["engineering college in borivali", "college in borivali", "what is the name of engineering college in borivali"],
+    "responses":["St. Francis Institute of Technology"]
+   },
+   {"tag": "malad",
+    "patterns": ["engineering college in malad","college in malad","what is the name of engineering college in malad"],
+    "responses":["Atharva College Of Engineering"]
+   },
+   {"tag":"kandivali",
+    "patterns": ["engineering college in kandivali","college in kandivali","what is the name of engineering college in kandivali"],
+    "responses":["Thakur College of Engineering and Technology"]
+   },
+   {"tag": "goregaon",
+    "patterns": ["engineering college in goregaon","college in goregaon","what is the name of engineering college in goregaon"],
+    "responses":["Ryan College Of Engineering And Management"]
+   },
+   {"tag": "andheri",
+    "patterns": ["engineering college in andheri", "college in andheri", "what is the name of engineering college in andheri"],
+    "responses":["Sardar Patel College of Engineering"]
+   },
+   {"tag":"santacruz",
+    "patterns":["engineering college in santacruz", "college in santacruz", "what is the name of engineering college in santacruz"],
+    "responses":["Usha Mittal Institute of Technology"]
+   },
+   {"tag": "bandra",
+    "patterns":["engineering college in bandra", "college in bandra", "what is the name of engineering college in bandra"],
+    "responses":["1.Fr. Conceicao Rodrigues College of Engineering \n 2.Thadomal Shahani Engineering College \n 3.Rizvi College of Engineering"]
+   },
+   {"tag": "mahim",
+    "patterns":["engineering college in mahim","college in mahim","what is the name of engineering college in mahim"],
+    "responses":["Xavier Institute of Engineering"]
+   },
+   {"tag": "matunga",
+    "patterns":["engineering college in matunga", "college in matunga", "what is the name of engineering college in matunga"],
+    "responses":["VJTI Mechanical And Production Engineering Dept."]
+   },
+   {"tag": "topitcompanies",
+    "patterns":["Top 10 IT companies in mumbai", "IT companies in mumbai", "list of IT companies in mumbai"],
+    "responses":["1.Tata Consultancy Services (TCS)\n2.Infosys\n3.Wipro\n4.Tech Mahindra\n5.Accenture\n6.Capgemini\n7.HCL Technologies\n8.L&T Infotech\n9.Oracle\n10.IBM"]
+   },
+   {"tag": "gate",
+    "patterns":["how to do gate preparations", "gate preparations", "how to study for gate"],
+    "responses":["Here are some tips for GATE (Graduate Aptitude Test in Engineering) preparation: \n 1. Understand the GATE syllabus: Before starting your preparation, make sure to go through the GATE syllabus and understand the topics that are covered in the exam.\n 2. Plan a study schedule: Prepare a study schedule that suits your daily routine and stick to it. Make sure to allocate enough time for each subject and topic.\n 3. Study from standard books: It's important to study from standard textbooks and reference materials. Choose the books that are recommended by your professors or senior students.\n 4. Solve previous year question papers: Solve as many previous year question papers as possible. This will give you an idea about the pattern of the exam and help you identify the important topics.\n5. Take online mock tests: Taking online mock tests will help you improve your time management skills and increase your speed and accuracy.\n6. Join coaching classes: If you feel the need for additional guidance, you can join coaching classes or online courses.\n7. Stay motivated: Staying motivated throughout the preparation is important. Keep reminding yourself about the benefits of cracking GATE and stay focused on your goals."]
+   },
+   {"tag": "recruiters",
+    "patterns": ["placements", "top placement company", "what are the top recruiters in India", "placements in engineering college", "recruiters in engineering college"],
+    "responses":["The top recruiters for engineering colleges may vary depending on the location, reputation, and ranking of the college. However, here are some of the most popular recruiters for engineering colleges in India:\nTATA Consultancy Services (TCS)\nInfosys\nWipro\nCognizant\nIBM\nCapgemini\nHCL Technologies\nAccenture\nTech Mahindra\nL&T Infotech"]
+   },
+   {"tag": "youtube",
+    "patterns":["What are some of the best YouTube channels for BE students to study from?", "Can you suggest some top-rated YouTube channels that offer valuable content for BE students?", "Which YouTube channels are most recommended for BE students looking to enhance their learning?", "What are the top YouTube channels that offer quality study material for BE students?", "Are there any YouTube channels that are considered the go-to for BE students who want to excel in their studies?"],
+    "responses":["Here are some more YouTube channels that may be helpful for BE students:\nNPTEL\nMIT OpenCourseWare\nKhan Academy\nCrash Course\nCoursera\nedX\nUdacity\nEngineering Explained\nLearn Engineering\nThe Organic Chemistry Tutor\nShomu's Biology\nPhysics Girl\nNumberphile\nComputerphile\nCodeacademy\nCS50\nCode with Mosh\nProgramming with Mosh\nDerek Banas\nTraversy Media\n"]
+   },
+   {"tag": "everyyr",
+    "patterns": ["how many engineers are there in India", "number of engineers in India", "engineers in India every year"],
+    "responses":["As of 2021, India annually produces fifteen lakh engineering graduates."]
+   },
+   {"tag": "sports",
+    "patterns":["sports quota colleges in mumbai", "what are the sports quota colleges in mumbai", "list of sports quota colleges in mumbai","colleges in mumbai"],
+    "responses":["Sardar Patel Institute of Technology \n 1.KJ Somaiya College of Engineering \n 2.Dwarkadas J. Sanghvi College of Engineering \n3.Thadomal Shahani Engineering College \n4.Fr. Conceicao Rodrigues Institute of Technology"]
+   },
+   {"tag": "highest",
+    "patterns":["which state has highest number of engineers", "highest number of engineers in india"],
+    "responses":["Half of all the engineering seats in India are located in the five southern states namely Andhra Pradesh, Telangana, Tamil Nadu, Karnataka, and Kerala."]
+   },
+   {"tag":"facility",
+    "patterns":["Engineering colleges with great facilities", "colleges with great facilities", "colleges with great facilities in india", "great facilities colleges"],
+    "responses":["1.RMK Engineering College\n2.IIT Guwahati\n3.IIT Roorkee\n4.IIT Madras\n5.IIT Delhi\n6.Sikkim Manipal Institute of Technology\n7.NIT Srinagar."]
+   },
+  {"tag": "bestfut",
+   "patterns":["Best Engineering Courses for Future", "courses for future", "engineering courses with great scope"],
+   "responses":["Computer Science and Engineering\nMechanical Engineering\nElectrical Engineering\nSolar Engineering\nWind Energy Engineering\nNanotechnology\nEnvironmental Engineering\nMarine Engineering\nInformation Security\nSoftware Development\nBiomedical Engineering\nCivil Engineering\nAerospace Engineering\nChemical Engineering\nElectrical and Electronics Engineering\nPetroleum Engineering\nTelecommunication Engineering\nMachine Learning and Artificial Intelligence\nRobotics Engineering\nBiochemical Engineering"]
+  },
+  {"tag": "KTplacement",
+   "patterns":["Does KT affect placement", "KT affect placement"],
+   "responses":["Most of the companies today allow candidates who have back(or KT) if and only if the candidate has cleared his back(or KT) till his final year. "]
+  },
+  {"tag": "KTTTT",
+   "patterns":["What is a KT", "what is kt", "what does KT mean"],
+   "responses":["A KT is a situation where you were too lazy,to clear a subject.KT stands for Kept Terms."]
+  },
+  {"tag": "advantages",
+   "patterns": ["Advantages of becoming an engineer", "what are the advantages of becoming engineer", "advantages of becoming an engineer"],
+   "responses":["Becoming an engineer has numerous advantages. Firstly, engineers are in high demand in a variety of industries, making it a lucrative career choice. The job prospects for engineers are expected to continue growing in the coming years due to advancements in technology and the need for innovative solutions to complex problems. Additionally, engineers often have the opportunity to work on challenging and exciting projects that have the potential to make a real difference in the world.", "Engineering is a career that allows individuals to make a positive impact on society by designing and developing innovative solutions that can help improve people's lives. Becoming an engineer can offer numerous advantages, from job security to the ability to make a real difference in the world."]
+  },
+  {"tag": "totalkt",
+   "patterns":["how many kts can i take to next semester", "total number of kts that can be taken next semester"],
+   "responses":["You can only carry max 5 kt's to the next year. It could be any combination of the previous year semester kt's. (for example. 2 kt's in semester 1, 3 kt's in semester 2 = a total of 5 kt's)."]
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
